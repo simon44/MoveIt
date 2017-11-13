@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<ListPreference
+		android:key="speed_preference"
+		android:title="Speed unit"
+		android:defaultValue="@string/kilometer_hour"
+		android:summary="Choose a speed unit"
+		android:entries="@array/speed_unit"
+		android:entryValues="@array/speed_unit_values" />
+	<ListPreference
+		android:key="distance_preference"
+		android:title="Distance unit"
+		android:defaultValue="@string/meter"
+		android:summary="Choose a distance unit"
+		android:entries="@array/distance_unit"
+		android:entryValues="@array/distance_unit_values" />
+</PreferenceScreen>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@color/black">
+
+    <Button
+        android:background="@color/solid_yellow"
+        android:textColor="@color/black"
+        android:id="@+id/button_start_stop"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="@string/start_run"
+        android:layout_centerHorizontal="true"/>
+
+    <Chronometer
+        android:textColor="@color/solid_yellow"
+        android:id="@+id/chrono"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/button_start_stop"
+        android:layout_marginTop="10sp"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_speed"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chrono"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="10sp"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/speed"
+            android:textSize="25sp"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/solid_yellow"/>
+        <TextView
+            android:id="@+id/speed_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kilometer_hour"
+            android:textSize="25sp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/solid_yellow"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_distance"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_speed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/distance"
+            android:textSize="25sp"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/solid_yellow"/>
+        <TextView
+            android:id="@+id/distance_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/meter"
+            android:textSize="25sp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/solid_yellow"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_average_speed"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_distance"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/average_speed"
+            android:textSize="25sp"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/solid_yellow"/>
+        <TextView
+            android:id="@+id/average_speed_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kilometer_hour"
+            android:textSize="25sp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/solid_yellow"/>
+    </RelativeLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="258sp"
+        tools:context="dv606.sb223df.moveit.RunActivity"
+        android:layout_below="@+id/layout_average_speed"
+        android:layout_marginTop="20sp"/>
+
+</RelativeLayout>

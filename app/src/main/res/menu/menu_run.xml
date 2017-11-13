@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/choice_speed_m"
+        android:title="@string/pref_speed_m"
+        />
+    <item
+        android:id="@+id/choice_speed_k"
+        android:title="@string/pref_speed_k"
+        />
+    <item
+        android:id="@+id/choice_distance_m"
+        android:title="@string/pref_distance_m"
+        />
+    <item
+        android:id="@+id/choice_distance_k"
+        android:title="@string/pref_distance_k"
+        />
+</menu>

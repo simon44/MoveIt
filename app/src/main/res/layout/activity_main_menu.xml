@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/start_run"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:text="@string/start_run"
+        android:textSize="20sp"
+        android:background="@color/solid_yellow"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/show_history"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:text="@string/show_history"
+        android:textSize="20sp"
+        android:layout_below="@+id/start_run"
+        android:layout_marginTop="30sp"
+        android:layout_marginBottom="30sp"
+        android:background="@color/solid_yellow"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/settings"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:text="@string/action_settings"
+        android:textSize="20sp"
+        android:layout_below="@+id/show_history"
+        android:layout_marginBottom="30sp"
+        android:background="@color/solid_yellow"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/quit_app"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:text="@string/quit_app"
+        android:textSize="20sp"
+        android:layout_below="@+id/settings"
+        android:background="@color/solid_yellow"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>

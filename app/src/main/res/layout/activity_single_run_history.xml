@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Run of the "
+        android:textSize="25sp"
+        android:textColor="@color/solid_yellow"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_time"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time"
+            android:textSize="25sp"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/solid_yellow"/>
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/solid_yellow"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_distance"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/distance"
+            android:textSize="25sp"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/solid_yellow"/>
+        <TextView
+            android:id="@+id/distance_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/solid_yellow"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_average_speed"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_distance"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/average_speed"
+            android:textSize="25sp"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/solid_yellow"/>
+        <TextView
+            android:id="@+id/average_speed_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/solid_yellow"/>
+    </RelativeLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="407sp"
+        tools:context="dv606.sb223df.moveit.RunActivity"
+        android:layout_below="@+id/layout_average_speed"
+        android:layout_marginTop="20sp"/>
+
+</RelativeLayout>

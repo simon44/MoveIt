@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Moveit</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Main menu -->
+    <string name="start_run">Start a run</string>
+    <string name="show_history">Show history</string>
+    <string name="quit_app">Quit the application</string>
+
+    <!-- Run activity -->
+    <string name="stop_run">Stop the run</string>
+    <string name="speed">Speed : </string>
+    <string name="average_speed">Average speed : </string>
+    <string name="distance">Distance : </string>
+    <string name="meter">m</string>
+    <string name="kilometer">km</string>
+    <string name="meter_second">m/s</string>
+    <string name="kilometer_hour">km/h</string>
+    <string name="seconds">seconds</string>
+
+    <!-- History & SingleRunHistory activity -->
+    <string name="reset">Reset the history</string>
+    <string name="run_tv">Run of the</string>
+    <string name="time">Time : </string>
+
+    <!-- Preferences -->
+    <string name="pref_speed_m">Speed in meter/second (m/s)</string>
+    <string name="pref_speed_k">Speed in kilometer/hour (km/h)</string>
+    <string name="pref_distance_m">Distance in meter (m)</string>
+    <string name="pref_distance_k">Distance in kilometer (km)</string>
+    
+    <!-- Notification -->
+    <string name="notification_title">You are actually running</string>
+    <string name="click_title">Click to return to the running app</string>
+    <string name="click">Click !</string>
+
+    <!-- Dialogs -->
+    <string name="run_ended">Run ended, well done !</string>
+    <string name="return_menu">Return main menu</string>
+    <string name="share">Share run</string>
+    <string name="quit_alert">Are you sure you want to quit the current run ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+</resources>
